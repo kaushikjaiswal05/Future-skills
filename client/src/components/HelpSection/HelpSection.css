@@ -1,0 +1,68 @@
+.help-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ffffff;
+
+  .card {
+    width: 33%;
+    height: 150px;
+    margin: 1.5rem 2rem;
+    padding: 1rem 0;
+    background-color: #f4f6f8;
+    border-radius: 15px;
+    border: 2px solid #e1e3e6;
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
+}
+
+.help-section .card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3e4048;
+  padding-left: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.card-hr {
+  border: none;
+  border-top: 2px solid #e1e3e6;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.help-section .card p {
+  font-size: 0.9rem;
+  color: #3e4048;
+  font-weight: 400;
+  margin-top: 0.8rem;
+  padding-left: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .help-section {
+    padding: 1rem;
+  }
+
+  .card {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .help-section .card {
+    width: 100%;
+  }
+
+  .help-section .card h3 {
+    font-size: 0.9rem;
+  }
+}
